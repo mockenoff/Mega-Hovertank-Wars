@@ -1,0 +1,23 @@
+CS4311 - Senior Design Project
+Group 4 - Mega Hovertank Wars
+Richard Mauldin, Trevor McKeehan, Max Peckham, Timothy Poon
+
+This zip file should include 19 files and 2 directories.
+
+To run the game:
+1) unzip this archive to the root web directory of your server.
+2) run dbSetup.sql (probably best through phpMyAdmin) to setup the database
+3) open up /classes/dbConnect.php so you can edit the database settings (server, username, and password)
+4) open up /server.php and change lines 13 and 14 to reflect the IP and port you wish to run the socket server on
+5) open up /client.php and change line 54 to reflect what you put in /server.php
+6) run /server.php and /socketpolicy.pl, probably with the following commands
+	php htdocs/server.php
+	perl htdocs/socketpolicy.pl
+7) browse to http://yourserver/browse.php with three other friends (on three other computers)
+
+This does require the use of a browser that supports the HTML5 canvas element, Flash, and WebGL, which, at this point, is Firefox 3.7a Minefield
+	http://www.mozilla.org/projects/minefield/
+
+The server requires PHP5 with socket extension and Perl installed as well as socket support by the server itself
+
+Unit tests must be run with this client and server-side environment, or they will fail. They can be run by browsing to the .php files in the /tests/
