@@ -1,0 +1,43 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#error {
+	width: 800px;
+	margin: 0 auto;
+}
+
+/************* Main  Page *************/
+#content #footer {
+	width: 100%;
+	text-align: right;
+	margin-top: 20px;
+}
+
+/************* Stats Page *************/
+#content form {
+	width: 100%;
+	margin: 0 auto 20px auto;
+}
+
+#results table {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+
+#results table tr {
+	width: 100%;
+}
+
+#results table tr td {
+	padding: 10px;
+	border: 1px solid #000;
+}
